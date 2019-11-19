@@ -1,0 +1,37 @@
+$font-open-sans: 'Open Sans', sans-serif;
+
+@mixin d-flex-column {
+    display:flex;
+    flex-direction:column;
+}
+
+@mixin d-flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+@mixin align-jc {
+    justify-content: center;
+}
+
+@mixin align-ai {
+    align-items:center;
+}
+
+body {
+    div{
+        @include d-flex-row();
+        @include align-jc();
+        @include align-ai();
+        h1{
+            font-size: 30px;
+            font-family: $font-open-sans;
+        }
+        p {
+            font-size: 13px;
+            span {
+
+            }
+        }
+    }
+}
